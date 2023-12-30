@@ -10,11 +10,17 @@
   <body>
     <img class="background" src="/bg.png" alt="background" />
     <header>
-      <label for="">Movies</label>
-      <form id="myForm">
-        <input type="text" id="value" /><button type="submit">Search</button>
-      </form>
+      <div>
+        <label for="" onclick="show_upcoming_movies()">Movies</label>
+        <form id="myForm">
+          <input
+            type="text"
+            id="value"
+            placeholder="Search a movie here"
+          /><button type="submit">Search</button>
+        </form>
+      </div>
     </header>
-    <div id="container"></div>
+    <div id="container" class="movie-item"></div>
   </body>
 </html>
